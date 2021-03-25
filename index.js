@@ -1,0 +1,14 @@
+const express = require('express');
+
+
+const app = express();
+
+// const rootCall = (req,res) => res.send('Thanks')
+
+
+
+app.get('/', (req,res) => {
+    res.send("Thanks for call me");
+});
+
+app.listen(4000, () => console.log('Listening to port 4000'));
